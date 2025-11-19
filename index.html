@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa Viajes | Agencia de viajes</title>
+    <meta name="description" content="Alexa Viajes - Paquetes y viajes familiares a playa, ciudad y destinos internacionales. Cotiza tu próximo viaje con nosotros.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <!-- Puedes cambiar el texto por tu logo en imagen -->
+                <span class="logo-main">Alexa</span>
+                <span class="logo-sub">Viajes</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto" class="btn-nav">Cotizar</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Tu próximo viaje empieza aquí</h1>
+                <p>Diseñamos experiencias a la medida: familias, grupos y escapadas de fin de semana. Tú sueñas el destino, nosotros lo hacemos posible.</p>
+                <div class="hero-actions">
+                    <a href="#paquetes" class="btn-primary">Ver paquetes</a>
+                    <a href="#contacto" class="btn-secondary">Cotizar viaje</a>
+                </div>
+                <p class="hero-whatsapp">
+                    ¿Tienes prisa? <a href="https://wa.me/5210000000000" target="_blank">Escríbenos por WhatsApp</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos -->
+    <section id="destinos" class="section">
+        <div class="container">
+            <h2 class="section-title">Destinos destacados</h2>
+            <p class="section-subtitle">Algunos de los lugares favoritos de nuestros viajeros.</p>
+
+            <div class="grid grid-3">
+                <article class="card destino-card">
+                    <div class="card-img img-playa"></div>
+                    <div class="card-body">
+                        <h3>Cancún & Riviera Maya</h3>
+                        <p>Playas turquesa, hoteles todo incluido, tours a cenotes y zonas arqueológicas.</p>
+                        <p class="chip">Familiar · Todo incluido</p>
+                    </div>
+                </article>
+
+                <article class="card destino-card">
+                    <div class="card-img img-ciudad"></div>
+                    <div class="card-body">
+                        <h3>CDMX Escapada urbana</h3>
+                        <p>Gastronomía, museos, espectáculos y experiencias culturales para todos.</p>
+                        <p class="chip">Cultural · City tour</p>
+                    </div>
+                </article>
+
+                <article class="card destino-card">
+                    <div class="card-img img-europa"></div>
+                    <div class="card-body">
+                        <h3>Europa Clásica</h3>
+                        <p>Madrid, París, Roma y más. Itinerarios guiados y tiempo libre para explorar.</p>
+                        <p class="chip">Internacional · Circuitos</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes -->
+    <section id="paquetes" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Paquetes sugeridos</h2>
+            <p class="section-subtitle">Ejemplos de paquetes que podemos ajustar a tu presupuesto.</p>
+
+            <div class="grid grid-3">
+                <article class="card paquete-card">
+                    <h3>Escapada a la playa</h3>
+                    <p class="paquete-precio">Desde $6,499 MXN por persona</p>
+                    <ul class="paquete-lista">
+                        <li>3 días / 2 noches</li>
+                        <li>Hotel 4★ cerca de la playa</li>
+                        <li>Desayunos incluidos</li>
+                        <li>Traslados aeropuerto–hotel–aeropuerto</li>
+                    </ul>
+                    <button class="btn-outline" data-paquete="Escapada a la playa">Me interesa</button>
+                </article>
+
+                <article class="card paquete-card paquete-destacado">
+                    <div class="paquete-etiqueta">Más solicitado</div>
+                    <h3>Vacaciones familiares</h3>
+                    <p class="paquete-precio">Desde $12,999 MXN por persona</p>
+                    <ul class="paquete-lista">
+                        <li>5 días / 4 noches</li>
+                        <li>Resort todo incluido</li>
+                        <li>Actividades para niños</li>
+                        <li>Asesoría personalizada</li>
+                    </ul>
+                    <button class="btn-primary" data-paquete="Vacaciones familiares">Cotizar este paquete</button>
+                </article>
+
+                <article class="card paquete-card">
+                    <h3>Tour Europa Express</h3>
+                    <p class="paquete-precio">Desde $39,999 MXN por persona</p>
+                    <ul class="paquete-lista">
+                        <li>10 días / 9 noches</li>
+                        <li>Vuelos redondos incluidos</li>
+                        <li>Ciudades principales de Europa</li>
+                        <li>Guía acompañante</li>
+                    </ul>
+                    <button class="btn-outline" data-paquete="Tour Europa Express">Solicitar información</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="section">
+        <div class="container grid grid-2">
+            <div>
+                <h2 class="section-title">¿Quiénes somos?</h2>
+                <p class="section-subtitle">
+                    Alexa Viajes es una agencia enfocada en diseñar viajes a la medida para familias, grupos y parejas.
+                </p>
+                <p>
+                    Te ayudamos a comparar opciones, optimizar tu presupuesto y elegir las mejores fechas y rutas. Nos encargamos de los detalles para que tú solo te preocupes por disfrutar.
+                </p>
+                <ul class="lista-check">
+                    <li>Asesoría personalizada por WhatsApp y correo.</li>
+                    <li>Opciones de pago flexibles (según proveedores).</li>
+                    <li>Experiencia en viajes familiares y paquetes a playa.</li>
+                </ul>
+            </div>
+            <div class="nosotros-bloque">
+                <div class="nosotros-card">
+                    <h3>¿Qué hacemos por ti?</h3>
+                    <ul>
+                        <li>Búsqueda y comparación de vuelos y hoteles.</li>
+                        <li>Armar itinerarios completos día por día.</li>
+                        <li>Recomendar actividades según tu tipo de viaje.</li>
+                        <li>Apoyarte antes, durante y después del viaje.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+            <div class="grid grid-3">
+                <article class="card testimonio-card">
+                    <p class="testimonio-texto">“Nos ayudaron a organizar nuestras primeras vacaciones en familia. Todo salió perfecto, hotel cómodo y sin complicaciones con los vuelos.”</p>
+                    <p class="testimonio-autor">— Familia Hernández</p>
+                </article>
+                <article class="card testimonio-card">
+                    <p class="testimonio-texto">“Cotizan varias opciones y te explican pros y contras. Sentí mucha confianza en el proceso.”</p>
+                    <p class="testimonio-autor">— Karla M.</p>
+                </article>
+                <article class="card testimonio-card">
+                    <p class="testimonio-texto">“Europa fue un sueño, desde el itinerario hasta los traslados. Volvería a reservar con ellos sin dudarlo.”</p>
+                    <p class="testimonio-autor">— Luis & Ana</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Cotización -->
+    <section id="contacto" class="section section-contacto">
+        <div class="container grid grid-2">
+            <div>
+                <h2 class="section-title">Cotiza tu próximo viaje</h2>
+                <p class="section-subtitle">
+                    Cuéntanos qué tienes en mente y te enviamos opciones de acuerdo con tu presupuesto.
+                </p>
+                <div class="contacto-info">
+                    <p><strong>Correo:</strong> contacto@alexaviajes.com</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5210000000000" target="_blank">+52 1 000 000 0000</a></p>
+                    <p><strong>Horario de atención:</strong> Lunes a viernes de 9:00 a 19:00</p>
+                </div>
+                <p class="contacto-nota">
+                    Entre más detalles nos des (fechas, número de personas, ciudad de salida), más precisa será tu cotización.
+                </p>
+            </div>
+
+            <div>
+                <form id="formCotizacion" class="form-card">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personas">Número de personas</label>
+                        <input type="number" id="personas" name="personas" min="1" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destinoInteres">Destino de interés</label>
+                        <input type="text" id="destinoInteres" name="destinoInteres" placeholder="Ej. Cancún, CDMX, Europa...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechaAprox">Fecha aproximada de viaje</label>
+                        <input type="month" id="fechaAprox" name="fechaAprox">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalles adicionales</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Presupuesto aproximado, tipo de viaje, saliendo de qué ciudad, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full">Enviar solicitud</button>
+                    <p id="formMensaje" class="form-mensaje"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5210000000000" target="_blank" class="btn-whatsapp" aria-label="Chatear por WhatsApp">
+        🟢
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Alexa Viajes. Todos los derechos reservados.</p>
+            <p class="footer-mini">
+                Sitio informativo. Los precios mostrados son ejemplos y pueden variar según fechas, disponibilidad y tipo de cambio.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
